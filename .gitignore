@@ -1,0 +1,46 @@
+# --- WordPress ---
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/backup*/
+wp-content/debug.log
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+sitemap.xml
+sitemap.xml.gz
+
+# --- Bases de datos y respaldos ---
+*.sql
+*.sql.gz
+*.zip
+*.tar
+*.tar.gz
+*.bak
+
+# --- Dependencias ---
+node_modules/
+vendor/
+package-lock.json.bak
+
+# --- Entorno ---
+.env
+.env.*
+*.local
+
+# --- Editores ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# --- Logs ---
+*.log
+error_log
+debug.log
