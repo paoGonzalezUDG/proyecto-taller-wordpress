@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 · HTML semántico | RECAL</title>
+    <meta name="description" content="Ejercicio de maquetación semántica del taller de WordPress + Elementor.">
+</head>
+<body>
+
+    <!--
+    =========================================================
+    EJERCICIO 1 · HTML SEMÁNTICO
+    =========================================================
+    Objetivo: maquetar la sección "Servicios" de RECAL usando
+    SOLO HTML. Nada de estilos todavía.
+
+    Reglas:
+    1. Un único <h1> en la página.
+    2. Sin <div> donde exista una etiqueta semántica adecuada.
+    3. Toda imagen lleva atributo alt descriptivo.
+    4. Todo campo de formulario lleva su <label>.
+    5. Valida el resultado en https://validator.w3.org/nu/
+
+    Entregable: completa las secciones marcadas con TODO.
+    =========================================================
+    -->
+
+    <header>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#proceso">Proceso</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#empresa">Empresa</a></li>
+                <li><a href="#presupuesto">Solicitar presupuesto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Limpieza y reacondicionamiento de calzado laboral y EPI</h1>
+
+        <section id="proceso">
+            <h2>Nuestro proceso</h2>
+            <ol>
+                <li>
+                    <h3>Recogida</h3>
+                    <p>Pasamos por tus instalaciones a recoger el calzado y el vestuario técnico.</p>
+                </li>
+                <!-- TODO: agrega los pasos "Higienización", "Control de calidad" y "Entrega" -->
+            </ol>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+
+            <article>
+                <h3>Limpieza de calzado de seguridad</h3>
+                <img src="../../recursos/placeholder.svg" alt="TODO: describe la imagen del servicio">
+                <p>Proceso compatible con las especificaciones del fabricante.</p>
+                <a href="#presupuesto">Solicitar presupuesto</a>
+            </article>
+
+            <!-- TODO: replica el <article> para dos servicios más -->
+        </section>
+
+        <section id="empresa">
+            <h2>Sobre RECAL</h2>
+            <!-- TODO: agrega un párrafo y una lista con tres datos de la empresa -->
+        </section>
+
+        <section id="presupuesto">
+            <h2>Solicita tu presupuesto</h2>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="nombre">Nombre y apellidos</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                <p>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </p>
+                <!-- TODO: agrega los campos "empresa", "teléfono" y un <textarea> de mensaje -->
+                <p>
+                    <button type="submit">Enviar solicitud</button>
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>RECAL &middot; Limpieza de calzado laboral</p>
+        <!-- TODO: agrega enlaces al aviso legal y a la política de privacidad -->
+    </footer>
+
+</body>
+</html>
