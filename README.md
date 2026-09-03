@@ -4,6 +4,11 @@ Taller práctico de desarrollo web. Construiremos, desde cero y en local, un sit
 
 El caso de estudio es un cliente real: **RECAL — [limpiezadecalzado.com](https://limpiezadecalzado.com/)**, empresa española dedicada a la limpieza y reacondicionamiento de calzado laboral, EPI y vestuario técnico.
 
+🎨 **Diseño del proyecto en Figma:**
+<https://www.figma.com/design/CN0BiZIyyV8NqCcH5saT3T/LIMPIEZA-DE-CALZADO--copia->
+
+> Duplica el archivo a tus borradores (*Duplicate to your drafts*) antes de tocar nada. **No edites el archivo compartido.**
+
 > Aquí llevaremos el registro del avance de cada sesión. Si te pierdes en algún momento, revisa en qué paso vamos y apóyate en tu equipo.
 
 ---
@@ -157,7 +162,7 @@ define( 'WP_MEMORY_LIMIT', '512M' );
 
 **Objetivo:** leer el diseño como lo haría una persona desarrolladora, no como espectadora.
 
-- [ ] **Paso 1:** Abrir el archivo de Figma del proyecto y activar **Dev Mode**. → [Guía](docs/06-figma-education.md)
+- [ ] **Paso 1:** Abrir el [archivo de Figma del proyecto](https://www.figma.com/design/CN0BiZIyyV8NqCcH5saT3T/LIMPIEZA-DE-CALZADO--copia-), duplicarlo a tus borradores y activar **Dev Mode**. → [Guía](docs/06-figma-education.md)
 - [ ] **Paso 2:** Levantar el **inventario de secciones** del sitio (RECAL): Hero, Proceso, Servicios, Empresa, CTA de presupuesto, Footer.
 - [ ] **Paso 3:** Extraer los **tokens de diseño**:
       - Colores (formato HEX) y su uso: primario, secundario, texto, fondo, bordes.
