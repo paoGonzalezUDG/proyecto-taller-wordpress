@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 · CSS | RECAL</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!--
+    =========================================================
+    EJERCICIO 2 · CSS
+    =========================================================
+    Objetivo: estilizar estas tarjetas de servicio para que
+    coincidan con el diseño de Figma.
+
+    Requisitos:
+    1. Usa variables CSS con tus tokens reales.
+    2. Distribuye las tarjetas con FLEXBOX o GRID (no floats).
+    3. Responsive: 3 columnas en escritorio, 2 en tablet, 1 en móvil.
+    4. Añade estado :hover y :focus-visible.
+    5. Prohibido !important.
+    =========================================================
+    -->
+
+    <header class="cabecera">
+        <p class="cabecera__marca">RECAL</p>
+    </header>
+
+    <main>
+        <section class="servicios">
+            <h1 class="servicios__titulo">Nuestros servicios</h1>
+            <p class="servicios__intro">
+                Más de 20 años reacondicionando calzado laboral, EPI y vestuario técnico.
+            </p>
+
+            <div class="servicios__grid">
+
+                <article class="tarjeta">
+                    <h2 class="tarjeta__titulo">Calzado de seguridad</h2>
+                    <p class="tarjeta__texto">
+                        Limpieza y desinfección sin comprometer las certificaciones del fabricante.
+                    </p>
+                    <a class="tarjeta__enlace" href="#">Ver detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <h2 class="tarjeta__titulo">EPI</h2>
+                    <p class="tarjeta__texto">
+                        Reacondicionamiento de equipos de protección individual con trazabilidad.
+                    </p>
+                    <a class="tarjeta__enlace" href="#">Ver detalle</a>
+                </article>
+
+                <article class="tarjeta">
+                    <h2 class="tarjeta__titulo">Vestuario técnico</h2>
+                    <p class="tarjeta__texto">
+                        Higienización de prendas de trabajo con procesos sostenibles.
+                    </p>
+                    <a class="tarjeta__enlace" href="#">Ver detalle</a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

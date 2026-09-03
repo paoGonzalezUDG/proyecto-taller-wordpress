@@ -1,0 +1,122 @@
+/* =============================================================
+   EJERCICIO 2 · CSS
+   Completa las partes marcadas con TODO.
+   ============================================================= */
+
+/* 1. TOKENS — reemplaza con los valores reales de tu Figma */
+:root {
+    --color-primario: #0B5FFF;
+    --color-texto: #1A1A1A;
+    --color-texto-suave: #5B5B5B;
+    --color-fondo: #FFFFFF;
+    --color-fondo-alt: #F5F7FA;
+    --color-borde: #E2E6EC;
+
+    --fuente: system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+    --espacio-sm: 1rem;
+    --espacio-md: 1.5rem;
+    --espacio-lg: 2.5rem;
+
+    --radio: 8px;
+}
+
+/* 2. RESET MÍNIMO */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fuente);
+    color: var(--color-texto);
+    background-color: var(--color-fondo-alt);
+    line-height: 1.6;
+}
+
+/* 3. CABECERA */
+.cabecera {
+    /* TODO: fondo blanco, padding, borde inferior */
+}
+
+.cabecera__marca {
+    /* TODO: peso bold, letter-spacing, sin margen vertical */
+}
+
+/* 4. SECCIÓN */
+.servicios {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--espacio-lg) var(--espacio-sm);
+}
+
+.servicios__titulo {
+    /* TODO: tamaño, peso y margen inferior según el diseño */
+}
+
+.servicios__intro {
+    color: var(--color-texto-suave);
+    /* TODO: ancho máximo de lectura (unos 65 caracteres) */
+}
+
+/* 5. GRID DE TARJETAS
+   TODO: 3 columnas en escritorio con CSS Grid y gap. */
+.servicios__grid {
+    display: grid;
+    /* grid-template-columns: ... */
+    gap: var(--espacio-md);
+}
+
+/* 6. TARJETA */
+.tarjeta {
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: var(--espacio-md);
+    /* TODO: sombra suave y transición */
+}
+
+.tarjeta:hover {
+    /* TODO: eleva la tarjeta con transform: translateY(...) */
+}
+
+.tarjeta__titulo {
+    margin-top: 0;
+    /* TODO: tamaño y peso */
+}
+
+.tarjeta__texto {
+    color: var(--color-texto-suave);
+}
+
+.tarjeta__enlace {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.tarjeta__enlace:hover {
+    text-decoration: underline;
+}
+
+/* 7. ACCESIBILIDAD: foco visible. No lo borres. */
+a:focus-visible {
+    outline: 3px solid var(--color-primario);
+    outline-offset: 2px;
+}
+
+/* 8. RESPONSIVE
+   TODO: 2 columnas hasta 1024px, 1 columna hasta 767px. */
+@media (max-width: 1024px) {
+    .servicios__grid {
+        /* grid-template-columns: ... */
+    }
+}
+
+@media (max-width: 767px) {
+    .servicios__grid {
+        /* grid-template-columns: ... */
+    }
+}
