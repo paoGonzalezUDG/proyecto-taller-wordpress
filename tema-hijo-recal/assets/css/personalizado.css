@@ -1,0 +1,115 @@
+/* =============================================================
+   RECAL · CSS del proyecto
+   -------------------------------------------------------------
+   1. Sustituye los valores de :root por los tokens reales que
+      extraigas de Figma (Sesión 3).
+   2. Escribe tus estilos por secciones, en el mismo orden que
+      aparecen en la página.
+   ============================================================= */
+
+/* 1. TOKENS ---------------------------------------------------- */
+:root {
+    /* Colores — REEMPLAZAR con los del diseño */
+    --color-primario:        #0B5FFF;
+    --color-primario-oscuro: #0842B8;
+    --color-secundario:      #00B37E;
+    --color-texto:           #1A1A1A;
+    --color-texto-suave:     #5B5B5B;
+    --color-fondo:           #FFFFFF;
+    --color-fondo-alt:       #F5F7FA;
+    --color-borde:           #E2E6EC;
+
+    /* Tipografía */
+    --fuente-titulos: 'Inter', system-ui, -apple-system, sans-serif;
+    --fuente-cuerpo:  'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Escala de espaciado (múltiplos de 8) */
+    --espacio-xs: 0.5rem;   /*  8px */
+    --espacio-sm: 1rem;     /* 16px */
+    --espacio-md: 1.5rem;   /* 24px */
+    --espacio-lg: 2.5rem;   /* 40px */
+    --espacio-xl: 4rem;     /* 64px */
+
+    /* Otros */
+    --radio: 8px;
+    --sombra: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --transicion: 0.25s ease;
+}
+
+/* 2. BASE ------------------------------------------------------ */
+body {
+    font-family: var(--fuente-cuerpo);
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    line-height: 1.25;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Foco visible: requisito de accesibilidad. No lo elimines. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-primario);
+    outline-offset: 2px;
+}
+
+/* 3. COMPONENTES ----------------------------------------------- */
+
+/* Añade la clase "boton-presupuesto" en Elementor:
+   Avanzado → Diseño → Clases CSS                                */
+.boton-presupuesto .elementor-button {
+    background-color: var(--color-primario);
+    border-radius: var(--radio);
+    transition: background-color var(--transicion);
+}
+
+.boton-presupuesto .elementor-button:hover {
+    background-color: var(--color-primario-oscuro);
+}
+
+/* Tarjeta de servicio */
+.tarjeta-servicio {
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: var(--espacio-md);
+    box-shadow: var(--sombra);
+    transition: transform var(--transicion);
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-4px);
+}
+
+/* 4. SECCIONES ------------------------------------------------- */
+/* .seccion-hero    { }
+   .seccion-proceso { }
+   .seccion-servicios { }
+   .seccion-empresa { }
+   .seccion-contacto { } */
+
+/* 5. RESPONSIVE ------------------------------------------------ */
+@media (max-width: 767px) {
+    :root {
+        --espacio-xl: 2.5rem;
+        --espacio-lg: 1.5rem;
+    }
+}
+
+/* 6. ACCESIBILIDAD: respeta la preferencia de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
