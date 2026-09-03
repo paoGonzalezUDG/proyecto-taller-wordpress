@@ -1,0 +1,18 @@
+/*
+Theme Name:   RECAL — Tema hijo
+Theme URI:    https://github.com/paoGonzalezUDG/proyecto-taller-wordpress
+Description:  Tema hijo de Hello Elementor para el taller de WordPress + Elementor (caso RECAL). Aquí va todo el CSS propio del proyecto.
+Author:       Taller de WordPress · UDG
+Author URI:   https://github.com/paoGonzalezUDG
+Template:     hello-elementor
+Version:      1.0.0
+Text Domain:  tema-hijo-recal
+License:      GNU General Public License v2 or later
+License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* -------------------------------------------------------------
+   Este archivo se carga DESPUÉS del tema padre.
+   Escribe aquí solo ajustes globales muy pequeños.
+   El grueso del CSS va en assets/css/personalizado.css
+   ------------------------------------------------------------- */
