@@ -32,10 +32,13 @@ Si tu solicitud tarda o es rechazada, el **plan gratuito Starter** alcanza para 
 
 ## 3. Abrir el archivo del proyecto
 
-La instructora compartirá el enlace al archivo de RECAL.
+Diseño de RECAL (LIMPIEZA DE CALZADO):
+
+<https://www.figma.com/design/CN0BiZIyyV8NqCcH5saT3T/LIMPIEZA-DE-CALZADO--copia->
 
 - Ábrelo y pulsa **Duplicate to your drafts** para tener tu propia copia editable.
-- **No edites el archivo original compartido.**
+- **No edites el archivo original compartido.** Es la referencia común de todo el grupo.
+- Si el enlace te pide acceso, avisa en clase: hay que darte permiso de lectura.
 
 ---
 
