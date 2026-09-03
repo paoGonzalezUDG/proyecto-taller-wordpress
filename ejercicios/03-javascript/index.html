@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 · JavaScript | RECAL</title>
+    <style>
+        body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+        .respuesta { display: none; padding-left: 1rem; border-left: 3px solid #0B5FFF; }
+        .respuesta.esta-visible { display: block; }
+        .pregunta { cursor: pointer; background: none; border: 0; font: inherit; font-weight: 600; padding: .75rem 0; width: 100%; text-align: left; }
+        .campo { display: block; margin-bottom: 1rem; }
+        .campo input, .campo textarea { width: 100%; padding: .5rem; font: inherit; }
+        .error { color: #B00020; font-size: .9rem; }
+        [aria-invalid="true"] { border: 2px solid #B00020; }
+    </style>
+</head>
+<body>
+
+    <!--
+    =========================================================
+    EJERCICIO 3 · JAVASCRIPT
+    Abre la consola del navegador (F12) mientras trabajas.
+    Instrucciones dentro de script.js
+    =========================================================
+    -->
+
+    <h1>Preguntas frecuentes</h1>
+
+    <div class="faq">
+        <button class="pregunta" aria-expanded="false">¿Cuánto tarda el servicio?</button>
+        <div class="respuesta"><p>El plazo habitual es de 48 a 72 horas desde la recogida.</p></div>
+
+        <button class="pregunta" aria-expanded="false">¿Recogéis en toda España?</button>
+        <div class="respuesta"><p>Operamos en España, Portugal y el sur de Francia.</p></div>
+
+        <button class="pregunta" aria-expanded="false">¿El proceso afecta a la certificación del EPI?</button>
+        <div class="respuesta"><p>No. Trabajamos según las especificaciones de cada fabricante.</p></div>
+    </div>
+
+    <h2>Solicita tu presupuesto</h2>
+
+    <form class="js-formulario" novalidate>
+        <label class="campo">
+            Nombre
+            <input type="text" name="nombre" required>
+        </label>
+        <label class="campo">
+            Correo electrónico
+            <input type="email" name="correo" required>
+        </label>
+        <label class="campo">
+            Mensaje
+            <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+        <p class="error js-error" role="alert"></p>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
