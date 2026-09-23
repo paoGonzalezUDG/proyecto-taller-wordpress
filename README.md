@@ -9,7 +9,7 @@ El caso de estudio es un cliente real: **RECAL — [limpiezadecalzado.com](https
 
 > Duplica el archivo a tus borradores (*Duplicate to your drafts*) antes de tocar nada. **No edites el archivo compartido.**
 
-> Aquí llevaremos el registro del avance de cada sesión. Si te pierdes en algún momento, revisa en qué paso vamos y apóyate en tu equipo.
+> Aquí llevaremos el registro del avance de cada sesión. Si te pierdes en algún momento, revisa en qué paso vamos y apóyate en tus compañeros.
 
 ---
 
@@ -25,9 +25,9 @@ El caso de estudio es un cliente real: **RECAL — [limpiezadecalzado.com](https
 
 | Herramienta | Versión de referencia | Para qué la usamos |
 |---|---|---|
-| **WordPress** | 7.1 (ago 2026) | CMS base del proyecto |
-| **Elementor** | 4.2.4 (ago 2026) | Constructor visual de páginas |
-| **PHP** | 8.3 o superior | Lenguaje sobre el que corre WordPress |
+| **WordPress** | 7.1.2 | Sistema de gestión de contenidos (CMS) base del proyecto. |
+| **Elementor** | 4.2.4 | Constructor visual de páginas (Page builder). |
+| **PHP** | 8.3 o superior | Lenguaje de programación del lado del servidor sobre el que corre WordPress. |
 | **MySQL / MariaDB** | MySQL 8.0+ / MariaDB 10.11+ | Base de datos del sitio |
 | **Apache** | 2.4 | Servidor web local |
 | **Laragon** *o* **Local (WP Engine)** | Última estable | Entorno de desarrollo local |
@@ -35,7 +35,6 @@ El caso de estudio es un cliente real: **RECAL — [limpiezadecalzado.com](https
 | **Git** | 2.4x | Control de versiones |
 | **GitHub** | — | Repositorio remoto y entrega de tareas |
 | **Figma / Figma Education** | — | Diseño, Dev Mode y extracción de assets |
-| **Node.js (opcional)** | LTS | Solo si compilamos Sass |
 | **Chrome DevTools** | — | Inspección y depuración |
 
 Requisitos oficiales de referencia:
