@@ -42,60 +42,6 @@ Requisitos oficiales de referencia:
 
 ---
 
-## 🗂️ Contenido del repositorio
-
-```
-proyecto-taller-wordpress/
-├── docs/                       <-- Guías paso a paso (instalación, errores, comandos)
-│   ├── 01-requisitos-y-cuentas.md
-│   ├── 02-instalacion-laragon.md
-│   ├── 03-instalacion-local-wpengine.md
-│   ├── 04-instalacion-wordpress.md
-│   ├── 05-git-y-github.md
-│   ├── 06-figma-education.md
-│   ├── 07-elementor-basico.md
-│   ├── 08-tema-hijo-y-codigo.md
-│   ├── 09-publicar-y-migrar.md
-│   ├── comandos.md             <-- Chuleta de línea de comandos
-│   └── errores-comunes.md      <-- 🚑 Catálogo de errores y soluciones
-├── ejercicios/                 <-- Prácticas de HTML, CSS y JavaScript
-│   ├── 01-html/
-│   ├── 02-css/
-│   └── 03-javascript/
-├── tema-hijo-recal/            <-- Tema hijo listo para instalar en WordPress
-│   ├── style.css
-│   ├── functions.php
-│   └── assets/
-├── recursos/                   <-- Snippets, checklist de entrega y contenidos
-└── README.md                   <-- Estás aquí
-```
-
----
-
-## 🚀 Arranque rápido
-
-Si ya tienes todo instalado y solo quieres empezar:
-
-```bash
-# 1. Ubícate en la carpeta de proyectos de tu servidor local
-cd C:\laragon\www
-
-# 2. Configura tu identidad de Git (solo la primera vez)
-git config --global user.name "TU_USUARIO_EN_GITHUB"
-git config --global user.email "TU_CORREO_EN_GITHUB"
-
-# 3. Clona este repositorio
-git clone https://github.com/paoGonzalezUDG/proyecto-taller-wordpress.git
-
-# 4. Entra y crea tu rama de trabajo
-cd proyecto-taller-wordpress
-git checkout -b recal-TU_NOMBRE
-```
-
-> Cambia `TU_NOMBRE` por tu nombre real, **sin espacios ni acentos**. Ejemplo: `recal-paola-gonzalez`.
-
----
-
 # 📅 Plan de sesiones
 
 ---
@@ -104,15 +50,17 @@ git checkout -b recal-TU_NOMBRE
 
 **Objetivo:** que todas las computadoras queden listas y funcionando igual.
 
-- [ ] **Paso 1:** Crear cuentas necesarias: GitHub, Figma (con **Figma Education**) y WordPress.org (opcional).
-      → [Guía de requisitos y cuentas](docs/01-requisitos-y-cuentas.md) · [Guía de Figma Education](docs/06-figma-education.md)
+- [ ] **Paso 1:** Crear cuenta en Figma (con **Figma Education**).
+      → [Guía de Figma Education](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-Figma-Education)
 - [ ] **Paso 2:** Instalar **Visual Studio Code** + extensiones recomendadas.
-      → [Guía de requisitos y cuentas](docs/01-requisitos-y-cuentas.md#3-visual-studio-code)
-- [ ] **Paso 3:** Instalar el entorno local. Elige **una** de las dos rutas:
-      - **Ruta A — Laragon** (Windows, más control, misma que usamos en el taller anterior) → [Guía](docs/02-instalacion-laragon.md)
-      - **Ruta B — Local by WP Engine** (Windows/macOS, instala WordPress con un clic) → [Guía](docs/03-instalacion-local-wpengine.md)
-- [ ] **Paso 4:** Instalar **Git** y configurarlo. → [Guía](docs/05-git-y-github.md)
-- [ ] **Paso 5:** Verificar que todo responde:
+      → [Guía: Visual Studio Code](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-Visual-Studio-Code)
+- [ ] **Paso 3:** Instalar extensiones de Chrome recomendadas.
+      → [Guía: Potenciando tu Navegador con Extensiones de Chrome](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-Potenciando-tu-Navegador-con-Extensiones-de-Chrome)
+- [ ] **Paso 4:** Crear cuenta en GitHub.
+      → [Guía: Instalando Git y Creando tu Cuenta en GitHub](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-Instalando-Git-y-Creando-tu-Cuenta-en-GitHub)
+- [ ] **Paso 5:** Instalar el entorno local.
+      → [Guía: Laragon(Windows)](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-Laragon)
+- [ ] **Paso 6:** Verificar que todo responde:
 
 ```bash
 php -v          # Debe mostrar 8.3.x o superior
@@ -121,30 +69,27 @@ git --version   # 2.4x.x
 code --version  # VS Code
 ```
 
-- [ ] **Paso 6:** Clonar este repositorio y crear tu rama (ver *Arranque rápido*).
-
 **Si algo falla:** → [errores-comunes.md § Entorno local](docs/errores-comunes.md#1-entorno-local-laragon--local--xampp)
 
 ---
 
 ## 🧱 Sesión 2 — Instalar WordPress y configuración base
 
-**Objetivo:** tener `recal.test` (o `recal.local`) corriendo con WordPress limpio.
+**Objetivo:** tener `recal.test` corriendo con WordPress limpio.
 
-- [ ] **Paso 1:** Crear la base de datos del proyecto. → [Guía](docs/04-instalacion-wordpress.md#2-crear-la-base-de-datos)
-- [ ] **Paso 2:** Descargar e instalar WordPress (famoso instalador de 5 minutos). → [Guía](docs/04-instalacion-wordpress.md)
-- [ ] **Paso 3:** Configuración inicial obligatoria:
+- [ ] **Paso 1:** Crear proyecto en WordPress. → [Guía: WordPress](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-WordPress)
+- [ ] **Paso 2:** Configuración inicial obligatoria:
       - Ajustes → Generales: título, descripción, idioma **Español (España)**, zona horaria.
       - Ajustes → **Enlaces permanentes** → *Nombre de la entrada*.
       - Ajustes → Lectura → desmarcar *Disuade a los motores de búsqueda* solo cuando el sitio sea público.
       - Borrar contenido de ejemplo: entrada *¡Hola, mundo!*, página *Página de ejemplo*, comentario y plugins que no usaremos.
-- [ ] **Paso 4:** Instalar plugins base del taller:
+- [ ] **Paso 3:** Instalar plugins base del taller:
       - **Elementor** (constructor)
       - **Hello Elementor** (tema base, ligero)
       - **WPForms Lite** o **Contact Form 7** (formularios)
       - *(Opcional)* **Yoast SEO** o **Rank Math**
-- [ ] **Paso 5:** Instalar el **tema hijo** de este repo. → [Guía](docs/08-tema-hijo-y-codigo.md)
-- [ ] **Paso 6:** Activar `WP_DEBUG` en `wp-config.php` para ver errores reales:
+- [ ] **Paso 4:** Instalar el **tema hijo** de este repo. → [Guía](docs/08-tema-hijo-y-codigo.md)
+- [ ] **Paso 5:** Activar `WP_DEBUG` en `wp-config.php` para ver errores reales:
 
 ```php
 define( 'WP_DEBUG', true );
