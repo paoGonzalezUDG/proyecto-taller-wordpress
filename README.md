@@ -17,7 +17,6 @@ El caso de estudio es un cliente real: **RECAL — [limpiezadecalzado.com](https
 
 - **No uses IA para resolver las actividades.** La idea del taller es que desarrolles tu propio criterio y habilidades. Si la usas para hacer el trabajo, el aprendizaje se pierde… y entonces este taller no tendría sentido.
 - Trabajaremos **siempre en local**. Nada de lo que hagas aquí toca el sitio real del cliente.
-- Todo lo que instales queda documentado en [`docs/`](docs/). Si algo falla, primero revisa [`docs/errores-comunes.md`](docs/errores-comunes.md).
 
 ---
 
