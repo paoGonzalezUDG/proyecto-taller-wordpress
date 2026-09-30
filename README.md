@@ -92,28 +92,9 @@ https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
 
 **Objetivo:** tener `recal.test` corriendo con WordPress limpio.
 
-- [ ] **Paso 1:** Crear proyecto en WordPress. → [Guía: WordPress](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-WordPress)
-- [ ] **Paso 2:** Configuración inicial obligatoria:
-      - Ajustes → Generales: título, descripción, idioma **Español (España)**, zona horaria.
-      - Ajustes → **Enlaces permanentes** → *Nombre de la entrada*.
-      - Ajustes → Lectura → desmarcar *Disuade a los motores de búsqueda* solo cuando el sitio sea público.
-      - Borrar contenido de ejemplo: entrada *¡Hola, mundo!*, página *Página de ejemplo*, comentario y plugins que no usaremos.
-- [ ] **Paso 3:** Instalar plugins base del taller:
-      - **Elementor** (constructor)
-      - **Hello Elementor** (tema base, ligero)
-      - **WPForms Lite** o **Contact Form 7** (formularios)
-      - *(Opcional)* **Yoast SEO** o **Rank Math**
-- [ ] **Paso 4:** Instalar el **tema hijo** de este repo. → [Guía](docs/08-tema-hijo-y-codigo.md)
-- [ ] **Paso 5:** Activar `WP_DEBUG` en `wp-config.php` para ver errores reales:
-
-```php
-define( 'WP_DEBUG', true );
-define( 'WP_DEBUG_LOG', true );
-define( 'WP_DEBUG_DISPLAY', false );
-define( 'WP_MEMORY_LIMIT', '512M' );
-```
-
-**Si algo falla:** → [errores-comunes.md § WordPress](docs/errores-comunes.md#2-wordpress)
+- [ ] **Paso 1:** Crear proyecto en WordPress. → [Guía](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-WordPress)
+- [ ] **Paso 2:** Configuración inicial obligatoria: → [Guía](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/WordPress:-Configuraci%C3%B3n-inicial-obligatoria)
+- [ ] **Paso 3:** Activar WP_DEBUG para ver errores reales: → [Guía](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Activar-WP_DEBUG-para-ver-errores-reales)
 
 ---
 
