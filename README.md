@@ -62,19 +62,29 @@ El caso de estudio es un cliente real: **RECAL — [limpiezadecalzado.com](https
 https://github.com/user-attachments/assets/707e32b1-a69f-4a51-ba1a-363d94a8e096
 
 
-- [ ] **Paso 7:** Verificar que todo responde:
+- [ ] **Paso 7:** Verificar versiones:
+      
+En Laragon, abre la terminal y pega los siguientes comandos:
 
 ```bash
 php -v          # Debe mostrar 8.3.x o superior
+```
+
+```bash
 mysql --version # MySQL 8.x o MariaDB 10.11+
+```
+
+```bash
 git --version   # Git
+```
+
+```bash
 code --version  # VS Code
 ```
 
-
+<img width="678" height="454" alt="image" src="https://github.com/user-attachments/assets/15c99084-b2d3-4b7f-8e0d-29c73c2c0ef5" />
 
 https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
-
 
 ---
 
