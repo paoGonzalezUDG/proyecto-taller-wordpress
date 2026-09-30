@@ -37,9 +37,6 @@ El caso de estudio es un cliente real: **RECAL — [limpiezadecalzado.com](https
 | **Figma / Figma Education** | — | Diseño, Dev Mode y extracción de assets |
 | **Chrome DevTools** | — | Inspección y depuración |
 
-Requisitos oficiales de referencia:
-[WordPress](https://wordpress.org/about/requirements/) · [Elementor](https://wordpress.org/plugins/elementor/)
-
 ---
 
 # 📅 Plan de sesiones
