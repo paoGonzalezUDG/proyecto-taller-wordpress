@@ -57,16 +57,25 @@ El caso de estudio es un cliente real: **RECAL — [limpiezadecalzado.com](https
       → [Guía: Instalando Git y Creando tu Cuenta en GitHub](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-Instalando-Git-y-Creando-tu-Cuenta-en-GitHub)
 - [ ] **Paso 5:** Instalar el entorno local.
       → [Guía: Laragon(Windows)](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-Laragon)
-- [ ] **Paso 6:** Verificar que todo responde:
+- [ ] **Paso 6:** Verificar que las versiones de PHP y APACHE sean las correctas
+      
+
+https://github.com/user-attachments/assets/707e32b1-a69f-4a51-ba1a-363d94a8e096
+
+
+- [ ] **Paso 7:** Verificar que todo responde:
 
 ```bash
 php -v          # Debe mostrar 8.3.x o superior
 mysql --version # MySQL 8.x o MariaDB 10.11+
-git --version   # 2.4x.x
+git --version   # Git
 code --version  # VS Code
 ```
 
-**Si algo falla:** → [errores-comunes.md § Entorno local](docs/errores-comunes.md#1-entorno-local-laragon--local--xampp)
+
+
+https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
+
 
 ---
 
