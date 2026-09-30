@@ -94,7 +94,7 @@ https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
 
 - [ ] **Paso 1:** Crear proyecto en WordPress. → [Guía](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-WordPress)
 - [ ] **Paso 2:** Configuración inicial obligatoria: → [Guía](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/WordPress:-Configuraci%C3%B3n-inicial-obligatoria)
-- [ ] **Paso 3:** Activar WP_DEBUG para ver errores reales: → [Guía](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Activar-WP_DEBUG-para-ver-errores-reales)
+- [ ] **Paso 3:** Activar `WP_DEBUG` para ver errores reales: → [Guía](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Activar-WP_DEBUG-para-ver-errores-reales)
 
 ---
 
