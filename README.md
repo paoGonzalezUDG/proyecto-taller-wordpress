@@ -102,8 +102,8 @@ https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
 
 **Objetivo:** leer el diseño como lo haría una persona desarrolladora, no como espectadora.
 
-- [ ] **Paso 1:** Abrir el [archivo de Figma del proyecto](https://www.figma.com/design/CN0BiZIyyV8NqCcH5saT3T/LIMPIEZA-DE-CALZADO--copia-), duplicarlo a tus borradores y activar **Dev Mode**. → [Guía](docs/06-figma-education.md)
-- [ ] **Paso 2:** Levantar el **inventario de secciones** del sitio (RECAL): Hero, Proceso, Servicios, Empresa, CTA de presupuesto, Footer.
+- [ ] **Paso 1:** Abrir el [archivo de Figma del proyecto](https://www.figma.com/design/CN0BiZIyyV8NqCcH5saT3T/LIMPIEZA-DE-CALZADO--copia-), duplicarlo a tus borradores y activar **Dev Mode**. → [Guía](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/Gu%C3%ADa:-Figma-Education)
+- [ ] **Paso 2:** Levantar el **inventario de secciones** del sitio (RECAL): Hero, Proceso, Servicios, Empresa, CTA de presupuesto, Footer.  → [Guía](https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/wiki/inventario-de-secciones)
 - [ ] **Paso 3:** Extraer los **tokens de diseño**:
       - Colores (formato HEX) y su uso: primario, secundario, texto, fondo, bordes.
       - Tipografías: familia, pesos, tamaños y `line-height` por nivel (H1–H6, body, small).
