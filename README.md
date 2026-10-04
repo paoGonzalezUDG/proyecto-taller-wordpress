@@ -107,78 +107,7 @@ https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
 
 ---
 
-## 📄 Sesión 4 — Bases de HTML
-
-**Objetivo:** maquetar a mano una sección del diseño antes de tocar Elementor. Si no entiendes el HTML, Elementor solo esconde el problema.
-
-- [ ] **Paso 1:** Teoría rápida: estructura de un documento, etiquetas de bloque vs. en línea, atributos.
-- [ ] **Paso 2:** **HTML semántico**: `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, jerarquía de encabezados (`h1` único por página).
-- [ ] **Paso 3:** Imágenes accesibles (`alt`), enlaces (`a`), listas, tablas y formularios (`label` + `input`).
-- [ ] **Paso 4:** Ejercicio guiado → [`ejercicios/01-html/`](ejercicios/01-html/)
-- [ ] **Paso 5:** **Entregable:** maqueta la sección *Servicios* de RECAL en HTML puro, sin estilos.
-- [ ] **Paso 6:** Validar tu HTML en el [validador del W3C](https://validator.w3.org/nu/) y corregir lo que marque.
-
----
-
-## 💅 Sesión 5 — Bases de CSS
-
-**Objetivo:** dar estilo a lo maquetado y entender por qué las cosas se mueven de lugar.
-
-- [ ] **Paso 1:** Selectores, especificidad y cascada. Por qué `!important` casi siempre es una mala señal.
-- [ ] **Paso 2:** Modelo de caja: `margin`, `border`, `padding`, `content` y `box-sizing: border-box`.
-- [ ] **Paso 3:** **Variables CSS** con los tokens de la Sesión 3:
-
-```css
-:root {
-  --color-primario: #0B5FFF;
-  --color-texto: #1A1A1A;
-  --fuente-base: 'Inter', system-ui, sans-serif;
-  --espacio-md: 1.5rem;
-}
-```
-
-- [ ] **Paso 4:** **Flexbox** y **CSS Grid**: cuándo usar cada uno.
-- [ ] **Paso 5:** **Responsive**: unidades relativas (`rem`, `%`, `vw`), `max-width`, imágenes fluidas y media queries *mobile first*.
-- [ ] **Paso 6:** Ejercicio guiado → [`ejercicios/02-css/`](ejercicios/02-css/)
-- [ ] **Paso 7:** **Entregable:** estiliza la sección *Servicios* hasta que se parezca al diseño de Figma en escritorio y móvil.
-
----
-
-## 🧩 Sesión 6 — WordPress + Elementor: construir el sitio
-
-**Objetivo:** reproducir la propuesta de Figma con Elementor, aplicando lo aprendido.
-
-- [ ] **Paso 1:** Anatomía de Elementor: panel, lienzo, navegador de estructura, historial y vista responsive. → [Guía](docs/07-elementor-basico.md)
-- [ ] **Paso 2:** **Ajustes del sitio** (*Site Settings*): cargar ahí los colores y tipografías globales de tus tokens. Nunca colores sueltos por widget.
-- [ ] **Paso 3:** **Contenedores flexbox**: estructura de secciones, alineación, gaps y anchos.
-- [ ] **Paso 4:** Construir sección por sección:
-      - Hero con CTA a WhatsApp
-      - Proceso (pasos numerados)
-      - Servicios (tarjetas)
-      - Empresa / confianza
-      - Formulario de presupuesto
-- [ ] **Paso 5:** Header y Footer globales.
-- [ ] **Paso 6:** Ajuste responsive en los tres breakpoints. Revisar en DevTools, no solo en el editor.
-- [ ] **Paso 7:** Guardar como **plantilla** y exportar el JSON a [`recursos/`](recursos/) para poder recuperarlo.
-
-**Si algo falla:** → [errores-comunes.md § Elementor](docs/errores-comunes.md#3-elementor)
-
----
-
-## ⚡ Sesión 7 — Bases de JavaScript y código propio en WordPress
-
-**Objetivo:** agregar comportamiento sin romper el sitio ni perder los cambios en la siguiente actualización.
-
-- [ ] **Paso 1:** Fundamentos: variables (`let` / `const`), tipos, condicionales, funciones y arreglos.
-- [ ] **Paso 2:** **DOM**: `querySelector`, `classList`, `addEventListener`.
-- [ ] **Paso 3:** Ejercicio guiado → [`ejercicios/03-javascript/`](ejercicios/03-javascript/)
-- [ ] **Paso 4:** Práctica aplicada: menú móvil, acordeón de preguntas frecuentes y validación del formulario antes de enviar.
-- [ ] **Paso 5:** **La forma correcta de cargar CSS y JS en WordPress**: `wp_enqueue_style()` y `wp_enqueue_script()` desde el tema hijo. Nunca pegando `<script>` en el header del tema padre. → [Guía](docs/08-tema-hijo-y-codigo.md)
-- [ ] **Paso 6:** Depuración: consola del navegador, pestaña Network y `console.log()` con criterio.
-
----
-
-## 🚢 Sesión 8 — Optimización, entrega y cierre
+## 🚢 Sesión 4 — Optimización, entrega y cierre
 
 **Objetivo:** dejar el proyecto presentable y entendible por alguien más.
 
@@ -209,17 +138,6 @@ git push -u origin recal-TU_NOMBRE
 ```
 
 > El mensaje de commit debe ser **claro, específico y único**. Repetir *"cambios"* en cada commit es una mala práctica: hace ilegible el historial.
-
-Chuleta completa de comandos → [`docs/comandos.md`](docs/comandos.md)
-
----
-
-## 🚑 ¿Algo se rompió?
-
-1. Lee el mensaje de error completo. No lo cierres.
-2. Búscalo en [`docs/errores-comunes.md`](docs/errores-comunes.md).
-3. Revisa `wp-content/debug.log` y la consola del navegador (F12).
-4. Si sigue sin salir, abre un **Issue** en este repositorio con: qué hiciste, qué esperabas, qué pasó y una captura del error.
 
 ---
 
