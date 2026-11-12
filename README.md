@@ -112,7 +112,7 @@ https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
 **Objetivo:** **subir tu evidencia a este repositorio** en tu propia rama.
 
 - [ ] **Paso 1:** Tomar **3 capturas** de tu página de inicio con el modo responsive de Elementor: escritorio, tablet y móvil.
-- [ ] **Paso 2:** **Subir tu evidencia a GitHub** en tu rama `nombre-carrera-año` (instrucciones para copiar y pegar abajo).
+- [ ] **Paso 2:** Subir tu evidencia a GitHub en tu rama `nombre-carrera-año`.
 
 ### Paso 1 — Capturas de evidencia
 
@@ -126,121 +126,78 @@ Abre tu página de inicio en el editor de Elementor y usa el **modo responsive**
 
 > Para tomar la captura en Windows: `Win + Shift + S` → selecciona el área → clic en la notificación para guardarla.
 
-### Paso 2 — Subir tu evidencia a GitHub (copiar y pegar)
+### Paso 2 — Subir tu evidencia a GitHub
 
-> **Antes de empezar**
-> - Usa **Git Bash** (menú Inicio → escribe *Git Bash*). En Mac usa la app **Terminal**.
-> - Para **pegar** en Git Bash: `Shift + Insert` o clic derecho → *Paste*. (`Ctrl + V` puede no funcionar).
-> - Pega **un bloque a la vez** y presiona `Enter`. Espera a que termine antes de pegar el siguiente.
-> - En los comandos verás `TU_RAMA`: **cámbialo por el nombre de tu rama** (paso 2.1). Tip: pega el bloque en el Bloc de notas, usa `Ctrl + H` → reemplazar `TU_RAMA` por tu rama → *Reemplazar todo*, y luego cópialo a Git Bash.
+Copia y pega cada bloque en **Git Bash**. Donde diga `TU_RAMA`, escribe tu rama.
 
-#### 2.1 Define el nombre de tu rama
+**Nombre de tu rama:** `primernombre-carrera-año`, en minúsculas, sin acentos, sin ñ y sin espacios. Ejemplo: `paola-computacion-2026`
 
-Formato: **primer nombre - carrera - año**, todo en **minúsculas**, **sin acentos**, **sin ñ** (usa `n`) y **sin espacios** (usa `-`).
-
-| Correcto | Incorrecto |
-|---|---|
-| `paola-computacion-2026` | `Paola-Computación-2026` |
-| `jose-informatica-2026` | `josé informática 2026` |
-| `nuno-computacion-2026` | `nuño_computacion_2026` |
-
-Anótalo; lo vas a usar en lugar de `TU_RAMA` en los siguientes pasos.
-
-#### 2.2 Dile a Git quién eres (solo la primera vez en esta computadora)
-
-Usa el **mismo correo de tu cuenta de GitHub**:
+#### 1. Verificar Git
 
 ```bash
-git config --global user.name "Tu Nombre Apellido"
-git config --global user.email "tu-correo@ejemplo.com"
+git --version
 ```
 
-#### 2.3 Descarga el repositorio
+#### 2. Abrir Git Bash en tu Escritorio
+
+Clic derecho en el Escritorio > **Mostrar más opciones** > **Open Git Bash here**
+
+#### 3. Clonar el repositorio y entrar a la carpeta
 
 ```bash
-cd ~
 git clone https://github.com/paoGonzalezUDG/proyecto-taller-wordpress.git
-cd ~/proyecto-taller-wordpress
-git checkout main
-git pull origin main
+cd proyecto-taller-wordpress
 ```
 
-> Si aparece `already exists and is not an empty directory`, no pasa nada: ya lo tenías descargado. Las demás líneas siguen funcionando.
+#### 4. Configurar tu nombre y correo (solo la primera vez)
 
-#### 2.4 Crea tu rama y tu carpeta de entrega
+```bash
+git config --global user.name "TU_NOMBRE"
+git config --global user.email "TU_CORREO_DE_GITHUB"
+```
 
-Crear tu rama y cambiarte a ella:
+#### 5. Crear tu rama y cambiarte a ella
 
 ```bash
 git checkout -b TU_RAMA
-```
-
-Comprobar en qué rama estás (la tuya debe aparecer con `*`):
-
-```bash
 git branch
 ```
 
-Crear tu carpeta de entrega y abrirla:
+> Tu rama debe aparecer con `*`.
+
+#### 6. Crear tu carpeta de entrega
 
 ```bash
 mkdir -p entregas/TU_RAMA/capturas
 cp entregas/_plantilla/README.md entregas/TU_RAMA/README.md
-explorer.exe "$(cygpath -wa entregas/TU_RAMA/capturas)"
 ```
 
-Se abrirá la carpeta `capturas`. **Copia ahí tus 3 imágenes** del Paso 1.
+Copia tus 3 capturas en `entregas/TU_RAMA/capturas` y llena `entregas/TU_RAMA/README.md` en VS Code.
 
-> En Mac, cambia la última línea por: `open entregas/TU_RAMA/capturas`
-
-#### 2.5 Llena tu ficha de entrega
+#### 7. Subir tus cambios
 
 ```bash
-code entregas/TU_RAMA/README.md
-```
-
-Se abre en VS Code. Llena tus datos y tus dos respuestas. Guarda con `Ctrl + S`.
-
-#### 2.6 Sube tu evidencia
-
-```bash
-git add entregas/TU_RAMA
-git commit -m "Agrega evidencia final de TU_RAMA: capturas"
+git status
+git add .
+git commit -m "Entrega final TU_RAMA"
 git push -u origin TU_RAMA
 ```
 
-> La primera vez se abrirá una ventana para **iniciar sesión en GitHub**. Elige *Sign in with your browser* y autoriza.
+> La primera vez se abre una ventana para iniciar sesión en GitHub: *Sign in with your browser*.
 
-#### 2.7 Comprueba que sí se subió
+#### 8. Comprobar
 
-Abre <https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/branches> y busca tu rama. Entra a `entregas/TU_RAMA/` y verifica que se vean tus 3 capturas.
+Busca tu rama en <https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/branches>.
 
-Después, abre tu **Pull Request** (no hagas *merge*):
+#### Si aparece un error
 
-1. En la página del repositorio aparecerá el aviso amarillo *“TU_RAMA had recent pushes”* → clic en **Compare & pull request**.
-2. Título: `Entrega final — TU_RAMA`
-3. Clic en **Create pull request**.
-
-#### Errores comunes
-
-| Mensaje que ves | Qué significa | Solución |
-|---|---|---|
-| `Permission to paoGonzalezUDG/proyecto-taller-wordpress.git denied` o `403` | Aún no eres colaborador del repositorio. | Revisa tu correo y acepta la invitación, o entra a <https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/invitations>. Luego vuelve a pegar: `git push -u origin TU_RAMA`. Si no tienes invitación, usa el **Plan B** de abajo. |
-| `Author identity unknown` | Git no sabe quién eres. | Haz el bloque **2.2** y vuelve a pegar el bloque **2.6**. |
-| `nothing to commit` | Git no encontró archivos nuevos. | Revisa que las capturas estén dentro de `entregas/TU_RAMA/capturas` y que guardaste el README con `Ctrl + S`. |
-| `a branch named '...' already exists` | Ya habías creado tu rama. | Pega `git checkout TU_RAMA` y continúa con el resto del paso 2.4. |
-| Aparece una carpeta llamada `TU_RAMA` | Pegaste el comando sin cambiar `TU_RAMA` por tu rama. | Avísale a la instructora antes de seguir. |
-| `src refspec ... does not match any` | Intentaste subir sin haber hecho commit. | Pega de nuevo el bloque **2.6** completo. |
-| `not a git repository` | No estás dentro de la carpeta del proyecto. | Pega `cd ~/proyecto-taller-wordpress` y repite el bloque que falló. |
-
-**Plan B (solo si no eres colaborador):** entra al repositorio en GitHub → botón **Fork** → *Create fork*. Luego pega, cambiando `TU_USUARIO` por tu usuario de GitHub:
-
-```bash
-git remote add mifork https://github.com/TU_USUARIO/proyecto-taller-wordpress.git
-git push -u mifork TU_RAMA
-```
-
-Después, en tu fork, clic en **Compare & pull request** para enviarlo hacia `paoGonzalezUDG/proyecto-taller-wordpress` → `main`.
+| Error | Solución |
+|---|---|
+| `Permission denied` o `403` | Acepta la invitación al repositorio en tu correo y repite `git push -u origin TU_RAMA` |
+| `Author identity unknown` | Repite el paso 4 y luego el paso 7 |
+| `already exists` al clonar | Ya lo tenías: `cd proyecto-taller-wordpress` y `git pull origin main` |
+| `a branch named ... already exists` | `git checkout TU_RAMA` |
+| `nothing to commit` | Revisa que tus capturas estén en `entregas/TU_RAMA/capturas` |
 
 ---
 
