@@ -132,9 +132,9 @@ Abre tu página de inicio en el editor de Elementor y usa el **modo responsive**
 > - Usa **Git Bash** (menú Inicio → escribe *Git Bash*). En Mac usa la app **Terminal**.
 > - Para **pegar** en Git Bash: `Shift + Insert` o clic derecho → *Paste*. (`Ctrl + V` puede no funcionar).
 > - Pega **un bloque a la vez** y presiona `Enter`. Espera a que termine antes de pegar el siguiente.
-> - Solo vas a **editar lo que está entre comillas** en los bloques 2.1 y 2.2. Todo lo demás se pega tal cual.
+> - En los comandos verás `TU_RAMA`: **cámbialo por el nombre de tu rama** (paso 2.1). Tip: pega el bloque en el Bloc de notas, usa `Ctrl + H` → reemplazar `TU_RAMA` por tu rama → *Reemplazar todo*, y luego cópialo a Git Bash.
 
-#### 2.1 Escribe el nombre de tu rama
+#### 2.1 Define el nombre de tu rama
 
 Formato: **primer nombre - carrera - año**, todo en **minúsculas**, **sin acentos**, **sin ñ** (usa `n`) y **sin espacios** (usa `-`).
 
@@ -144,14 +144,7 @@ Formato: **primer nombre - carrera - año**, todo en **minúsculas**, **sin acen
 | `jose-informatica-2026` | `josé informática 2026` |
 | `nuno-computacion-2026` | `nuño_computacion_2026` |
 
-Cambia `paola-computacion-2026` por el tuyo y pega:
-
-```bash
-RAMA="paola-computacion-2026"
-echo "Tu rama será: $RAMA"
-```
-
-> Si cierras Git Bash, **vuelve a pegar este bloque** antes de continuar; si no, los siguientes comandos fallan.
+Anótalo; lo vas a usar en lugar de `TU_RAMA` en los siguientes pasos.
 
 #### 2.2 Dile a Git quién eres (solo la primera vez en esta computadora)
 
@@ -176,21 +169,34 @@ git pull origin main
 
 #### 2.4 Crea tu rama y tu carpeta de entrega
 
+Crear tu rama y cambiarte a ella:
+
 ```bash
-git switch -c "$RAMA"
-mkdir -p "entregas/$RAMA/capturas"
-cp entregas/_plantilla/README.md "entregas/$RAMA/README.md"
-explorer.exe "$(cygpath -w "$PWD/entregas/$RAMA/capturas")"
+git checkout -b TU_RAMA
+```
+
+Comprobar en qué rama estás (la tuya debe aparecer con `*`):
+
+```bash
+git branch
+```
+
+Crear tu carpeta de entrega y abrirla:
+
+```bash
+mkdir -p entregas/TU_RAMA/capturas
+cp entregas/_plantilla/README.md entregas/TU_RAMA/README.md
+explorer.exe "$(cygpath -wa entregas/TU_RAMA/capturas)"
 ```
 
 Se abrirá la carpeta `capturas`. **Copia ahí tus 3 imágenes** del Paso 1.
 
-> En Mac, cambia la última línea por: `open "entregas/$RAMA/capturas"`
+> En Mac, cambia la última línea por: `open entregas/TU_RAMA/capturas`
 
 #### 2.5 Llena tu ficha de entrega
 
 ```bash
-code "entregas/$RAMA/README.md"
+code entregas/TU_RAMA/README.md
 ```
 
 Se abre en VS Code. Llena tus datos y tus dos respuestas. Guarda con `Ctrl + S`.
@@ -198,32 +204,32 @@ Se abre en VS Code. Llena tus datos y tus dos respuestas. Guarda con `Ctrl + S`.
 #### 2.6 Sube tu evidencia
 
 ```bash
-git add "entregas/$RAMA"
-git commit -m "Agrega evidencia final de $RAMA: capturas"
-git push -u origin "$RAMA"
+git add entregas/TU_RAMA
+git commit -m "Agrega evidencia final de TU_RAMA: capturas"
+git push -u origin TU_RAMA
 ```
 
 > La primera vez se abrirá una ventana para **iniciar sesión en GitHub**. Elige *Sign in with your browser* y autoriza.
 
 #### 2.7 Comprueba que sí se subió
 
-Abre <https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/branches> y busca tu rama. Entra a `entregas/tu-rama/` y verifica que se vean tus 3 capturas.
+Abre <https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/branches> y busca tu rama. Entra a `entregas/TU_RAMA/` y verifica que se vean tus 3 capturas.
 
 Después, abre tu **Pull Request** (no hagas *merge*):
 
-1. En la página del repositorio aparecerá el aviso amarillo *“tu-rama had recent pushes”* → clic en **Compare & pull request**.
-2. Título: `Entrega final — tu-rama`
+1. En la página del repositorio aparecerá el aviso amarillo *“TU_RAMA had recent pushes”* → clic en **Compare & pull request**.
+2. Título: `Entrega final — TU_RAMA`
 3. Clic en **Create pull request**.
 
 #### Errores comunes
 
 | Mensaje que ves | Qué significa | Solución |
 |---|---|---|
-| `Permission to paoGonzalezUDG/proyecto-taller-wordpress.git denied` o `403` | Aún no eres colaborador del repositorio. | Revisa tu correo y acepta la invitación, o entra a <https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/invitations>. Luego vuelve a pegar: `git push -u origin "$RAMA"`. Si no tienes invitación, usa el **Plan B** de abajo. |
+| `Permission to paoGonzalezUDG/proyecto-taller-wordpress.git denied` o `403` | Aún no eres colaborador del repositorio. | Revisa tu correo y acepta la invitación, o entra a <https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/invitations>. Luego vuelve a pegar: `git push -u origin TU_RAMA`. Si no tienes invitación, usa el **Plan B** de abajo. |
 | `Author identity unknown` | Git no sabe quién eres. | Haz el bloque **2.2** y vuelve a pegar el bloque **2.6**. |
-| `nothing to commit` | Git no encontró archivos nuevos. | Revisa que las capturas estén dentro de `entregas/tu-rama/capturas` y que guardaste el README con `Ctrl + S`. |
-| `a branch named '...' already exists` | Ya habías creado tu rama. | Pega `git switch "$RAMA"` y continúa con las otras líneas del bloque 2.4. |
-| `'' is not a valid branch name` o `entregas//capturas` | Se perdió el nombre de tu rama (cerraste Git Bash). | Vuelve a pegar el bloque **2.1** y luego `cd ~/proyecto-taller-wordpress`. |
+| `nothing to commit` | Git no encontró archivos nuevos. | Revisa que las capturas estén dentro de `entregas/TU_RAMA/capturas` y que guardaste el README con `Ctrl + S`. |
+| `a branch named '...' already exists` | Ya habías creado tu rama. | Pega `git checkout TU_RAMA` y continúa con el resto del paso 2.4. |
+| Aparece una carpeta llamada `TU_RAMA` | Pegaste el comando sin cambiar `TU_RAMA` por tu rama. | Avísale a la instructora antes de seguir. |
 | `src refspec ... does not match any` | Intentaste subir sin haber hecho commit. | Pega de nuevo el bloque **2.6** completo. |
 | `not a git repository` | No estás dentro de la carpeta del proyecto. | Pega `cd ~/proyecto-taller-wordpress` y repite el bloque que falló. |
 
@@ -231,7 +237,7 @@ Después, abre tu **Pull Request** (no hagas *merge*):
 
 ```bash
 git remote add mifork https://github.com/TU_USUARIO/proyecto-taller-wordpress.git
-git push -u mifork "$RAMA"
+git push -u mifork TU_RAMA
 ```
 
 Después, en tu fork, clic en **Compare & pull request** para enviarlo hacia `paoGonzalezUDG/proyecto-taller-wordpress` → `main`.
