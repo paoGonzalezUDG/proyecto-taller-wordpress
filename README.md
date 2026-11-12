@@ -128,9 +128,7 @@ Abre tu página de inicio en el editor de Elementor y usa el **modo responsive**
 
 ### Paso 2 — Subir tu evidencia a GitHub
 
-Copia y pega cada bloque en **Git Bash**. Donde diga `TU_RAMA`, escribe tu rama.
-
-**Nombre de tu rama:** `primernombre-carrera-año`, en minúsculas, sin acentos, sin ñ y sin espacios. Ejemplo: `paola-computacion-2026`
+Copia y pega cada bloque en **Git Bash**. Donde diga `TU_RAMA`, escribe tu rama (paso 5).
 
 #### 1. Verificar Git
 
@@ -157,6 +155,13 @@ git config --global user.email "TU_CORREO_DE_GITHUB"
 ```
 
 #### 5. Crear tu rama y cambiarte a ella
+
+`TU_RAMA` = **primernombre-carrera-año**, en minúsculas, sin acentos, sin ñ y sin espacios.
+
+| Correcto | Incorrecto |
+|---|---|
+| `paola-computacion-2026` | `Paola-Computación-2026` |
+| `jose-informatica-2026` | `josé informática 2026` |
 
 ```bash
 git checkout -b TU_RAMA
