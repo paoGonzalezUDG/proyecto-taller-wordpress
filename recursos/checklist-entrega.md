@@ -1,4 +1,4 @@
-# ✅ Checklist de entrega
+# Checklist de entrega
 
 Repásala antes de la Sesión 4. Cada casilla sin marcar es un punto menos y, en el mundo real, una llamada del cliente.
 
