@@ -1,6 +1,6 @@
 # ✅ Checklist de entrega
 
-Repásala antes de la Sesión 8. Cada casilla sin marcar es un punto menos y, en el mundo real, una llamada del cliente.
+Repásala antes de la Sesión 4. Cada casilla sin marcar es un punto menos y, en el mundo real, una llamada del cliente.
 
 ---
 
@@ -62,11 +62,9 @@ Repásala antes de la Sesión 8. Cada casilla sin marcar es un punto menos y, en
 
 ## Entrega en GitHub
 
-- [ ] Todo tu trabajo está en la rama `recal-TU_NOMBRE`
+- [ ] Tu evidencia está en `entregas/TU_RAMA/` dentro de tu rama `nombre-carrera-año` (ej. `paola-computacion-2026`)
 - [ ] Los commits tienen mensajes claros y distintos entre sí
 - [ ] No subiste `wp-config.php`, `node_modules/`, `.sql` ni contraseñas
-- [ ] Exportaste tus plantillas de Elementor a `recursos/`
-- [ ] Llenaste `recursos/tokens-de-diseno.md`
 - [ ] Abriste el Pull Request hacia `main` con la descripción completa
 
 ## Presentación
