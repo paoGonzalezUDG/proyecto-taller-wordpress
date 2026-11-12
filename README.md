@@ -107,18 +107,133 @@ https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
 
 ---
 
-## 🚢 Sesión 4 — Optimización, entrega y cierre
+## 🚢 Sesión 4 — Entrega y cierre
 
-**Objetivo:** dejar el proyecto presentable y entendible por alguien más.
+**Objetivo:** **subir tu evidencia a este repositorio** en tu propia rama.
 
-- [ ] **Paso 1:** **Rendimiento**: imágenes en WebP, tamaños correctos, `loading="lazy"`, quitar plugins que no uses.
-- [ ] **Paso 2:** **SEO básico**: títulos y meta descripciones, jerarquía de encabezados, `alt` en imágenes, URLs limpias.
-- [ ] **Paso 3:** **Accesibilidad**: contraste de color, foco visible del teclado, etiquetas en formularios.
-- [ ] **Paso 4:** Auditoría con **Lighthouse** en DevTools. Anota puntajes antes/después.
-- [ ] **Paso 5:** **Migración a hosting** (demostración): exportar base de datos, subir archivos, ajustar `wp-config.php`, buscar y reemplazar URLs. → [Guía](docs/09-publicar-y-migrar.md)
-- [ ] **Paso 6:** Subir tu avance final y abrir un **Pull Request** hacia `main`.
-- [ ] **Paso 7:** Presentación final: cada equipo muestra su sitio y explica **una decisión de diseño y una dificultad técnica** que resolvió.
-- [ ] **Paso 8:** Checklist de entrega → [`recursos/checklist-entrega.md`](recursos/checklist-entrega.md)
+- [ ] **Paso 1:** Tomar las **2 capturas de evidencia** (ver tabla abajo).
+- [ ] **Paso 2:** **Subir tu evidencia a GitHub** en tu rama `nombre-carrera-año` (instrucciones para copiar y pegar abajo).
+
+### 📸 Paso 1 — Capturas de evidencia
+
+Guárdalas en formato **PNG** con estos nombres **exactos**:
+
+| Archivo | Qué debe mostrar |
+|---|---|
+| `01-inicio-escritorio.png` | Página de inicio a 1440 px de ancho |
+| `02-inicio-movil.png` | Página de inicio a 375 px (DevTools → `Ctrl + Shift + M`) |
+
+> Tip: en DevTools, `Ctrl + Shift + P` → escribe **screenshot** → *Capture full size screenshot* toma la página completa.
+
+### 🌿 Paso 2 — Subir tu evidencia a GitHub (copiar y pegar)
+
+> **Antes de empezar**
+> - Usa **Git Bash** (menú Inicio → escribe *Git Bash*). En Mac usa la app **Terminal**.
+> - Para **pegar** en Git Bash: `Shift + Insert` o clic derecho → *Paste*. (`Ctrl + V` puede no funcionar).
+> - Pega **un bloque a la vez** y presiona `Enter`. Espera a que termine antes de pegar el siguiente.
+> - Solo vas a **editar lo que está entre comillas** en los bloques 2.1 y 2.2. Todo lo demás se pega tal cual.
+
+#### 2.1 Escribe el nombre de tu rama
+
+Formato: **primer nombre - carrera - año**, todo en **minúsculas**, **sin acentos**, **sin ñ** (usa `n`) y **sin espacios** (usa `-`).
+
+| ✅ Correcto | ❌ Incorrecto |
+|---|---|
+| `paola-computacion-2026` | `Paola-Computación-2026` |
+| `jose-informatica-2026` | `josé informática 2026` |
+| `nuno-computacion-2026` | `nuño_computacion_2026` |
+
+Cambia `paola-computacion-2026` por el tuyo y pega:
+
+```bash
+RAMA="paola-computacion-2026"
+echo "Tu rama será: $RAMA"
+```
+
+> ⚠️ Si cierras Git Bash, **vuelve a pegar este bloque** antes de continuar; si no, los siguientes comandos fallan.
+
+#### 2.2 Dile a Git quién eres (solo la primera vez en esta computadora)
+
+Usa el **mismo correo de tu cuenta de GitHub**:
+
+```bash
+git config --global user.name "Tu Nombre Apellido"
+git config --global user.email "tu-correo@ejemplo.com"
+```
+
+#### 2.3 Descarga el repositorio
+
+```bash
+cd ~
+git clone https://github.com/paoGonzalezUDG/proyecto-taller-wordpress.git
+cd ~/proyecto-taller-wordpress
+git checkout main
+git pull origin main
+```
+
+> Si aparece `already exists and is not an empty directory`, no pasa nada: ya lo tenías descargado. Las demás líneas siguen funcionando.
+
+#### 2.4 Crea tu rama y tu carpeta de entrega
+
+```bash
+git switch -c "$RAMA"
+mkdir -p "entregas/$RAMA/capturas"
+cp entregas/_plantilla/README.md "entregas/$RAMA/README.md"
+explorer.exe "$(cygpath -w "$PWD/entregas/$RAMA/capturas")"
+```
+
+Se abrirá la carpeta `capturas`. **Copia ahí tus 2 imágenes** del Paso 1.
+
+> En Mac, cambia la última línea por: `open "entregas/$RAMA/capturas"`
+
+#### 2.5 Llena tu ficha de entrega
+
+```bash
+code "entregas/$RAMA/README.md"
+```
+
+Se abre en VS Code. Llena tus datos y tus dos respuestas. Guarda con `Ctrl + S`.
+
+#### 2.6 Sube tu evidencia
+
+```bash
+git add "entregas/$RAMA"
+git commit -m "Agrega evidencia final de $RAMA: capturas"
+git push -u origin "$RAMA"
+```
+
+> La primera vez se abrirá una ventana para **iniciar sesión en GitHub**. Elige *Sign in with your browser* y autoriza.
+
+#### 2.7 Comprueba que sí se subió
+
+Abre <https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/branches> y busca tu rama. Entra a `entregas/tu-rama/` y verifica que se vean tus 2 capturas.
+
+Después, abre tu **Pull Request** (no hagas *merge*):
+
+1. En la página del repositorio aparecerá el aviso amarillo *“tu-rama had recent pushes”* → clic en **Compare & pull request**.
+2. Título: `Entrega final — tu-rama`
+3. Clic en **Create pull request**.
+
+#### 🧯 Errores comunes
+
+| Mensaje que ves | Qué significa | Solución |
+|---|---|---|
+| `Permission to paoGonzalezUDG/proyecto-taller-wordpress.git denied` o `403` | Aún no eres colaborador del repositorio. | Revisa tu correo y acepta la invitación, o entra a <https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/invitations>. Luego vuelve a pegar: `git push -u origin "$RAMA"`. Si no tienes invitación, usa el **Plan B** de abajo. |
+| `Author identity unknown` | Git no sabe quién eres. | Haz el bloque **2.2** y vuelve a pegar el bloque **2.6**. |
+| `nothing to commit` | Git no encontró archivos nuevos. | Revisa que las capturas estén dentro de `entregas/tu-rama/capturas` y que guardaste el README con `Ctrl + S`. |
+| `a branch named '...' already exists` | Ya habías creado tu rama. | Pega `git switch "$RAMA"` y continúa con las otras líneas del bloque 2.4. |
+| `'' is not a valid branch name` o `entregas//capturas` | Se perdió el nombre de tu rama (cerraste Git Bash). | Vuelve a pegar el bloque **2.1** y luego `cd ~/proyecto-taller-wordpress`. |
+| `src refspec ... does not match any` | Intentaste subir sin haber hecho commit. | Pega de nuevo el bloque **2.6** completo. |
+| `not a git repository` | No estás dentro de la carpeta del proyecto. | Pega `cd ~/proyecto-taller-wordpress` y repite el bloque que falló. |
+
+**Plan B (solo si no eres colaborador):** entra al repositorio en GitHub → botón **Fork** → *Create fork*. Luego pega, cambiando `TU_USUARIO` por tu usuario de GitHub:
+
+```bash
+git remote add mifork https://github.com/TU_USUARIO/proyecto-taller-wordpress.git
+git push -u mifork "$RAMA"
+```
+
+Después, en tu fork, clic en **Compare & pull request** para enviarlo hacia `paoGonzalezUDG/proyecto-taller-wordpress` → `main`.
 
 ---
 
@@ -128,13 +243,13 @@ https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
 # Antes de empezar: traer los cambios nuevos
 git checkout main
 git pull origin main
-git checkout recal-TU_NOMBRE
+git checkout TU_RAMA        # ej. paola-computacion-2026
 git merge main
 
 # Al terminar: guardar tu avance
 git add .
 git commit -m "Maqueta la sección de servicios en HTML semántico"
-git push -u origin recal-TU_NOMBRE
+git push -u origin TU_RAMA
 ```
 
 > El mensaje de commit debe ser **claro, específico y único**. Repetir *"cambios"* en cada commit es una mala práctica: hace ilegible el historial.
