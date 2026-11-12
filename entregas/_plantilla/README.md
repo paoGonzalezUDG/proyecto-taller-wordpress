@@ -13,11 +13,14 @@
 
 Guarda tus imágenes en la carpeta `capturas/` **con estos nombres exactos** para que se vean aquí abajo:
 
-### Página de inicio en escritorio (1440 px)
-![Inicio escritorio](capturas/01-inicio-escritorio.png)
+### Escritorio
+![Escritorio](capturas/01-escritorio.png)
 
-### Página de inicio en móvil (375 px)
-![Inicio móvil](capturas/02-inicio-movil.png)
+### Tablet
+![Tablet](capturas/02-tablet.png)
+
+### Móvil
+![Móvil](capturas/03-movil.png)
 
 ---
 
