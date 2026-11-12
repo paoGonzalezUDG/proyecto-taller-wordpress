@@ -1,10 +1,10 @@
-# 🧼 Taller: Sitio Web con WordPress + Elementor
+# Taller: Sitio Web con WordPress + Elementor
 
 Taller práctico de desarrollo web. Construiremos, desde cero y en local, un sitio de **WordPress con Elementor** partiendo de una propuesta de diseño en **Figma**, reforzando en el camino las bases de **HTML, CSS y JavaScript**.
 
 El caso de estudio es un cliente real: **RECAL — [limpiezadecalzado.com](https://limpiezadecalzado.com/)**, empresa española dedicada a la limpieza y reacondicionamiento de calzado laboral, EPI y vestuario técnico.
 
-🎨 **Diseño del proyecto en Figma:**
+**Diseño del proyecto en Figma:**
 <https://www.figma.com/design/CN0BiZIyyV8NqCcH5saT3T/LIMPIEZA-DE-CALZADO--copia->
 
 > Duplica el archivo a tus borradores (*Duplicate to your drafts*) antes de tocar nada. **No edites el archivo compartido.**
@@ -13,14 +13,14 @@ El caso de estudio es un cliente real: **RECAL — [limpiezadecalzado.com](https
 
 ---
 
-## 📌 Antes de empezar
+## Antes de empezar
 
 - **No uses IA para resolver las actividades.** La idea del taller es que desarrolles tu propio criterio y habilidades. Si la usas para hacer el trabajo, el aprendizaje se pierde… y entonces este taller no tendría sentido.
 - Trabajaremos **siempre en local**. Nada de lo que hagas aquí toca el sitio real del cliente.
 
 ---
 
-## 🧰 Tecnologías del taller
+## Tecnologías del taller
 
 | Herramienta | Versión de referencia | Para qué la usamos |
 |---|---|---|
@@ -38,11 +38,11 @@ El caso de estudio es un cliente real: **RECAL — [limpiezadecalzado.com](https
 
 ---
 
-# 📅 Plan de sesiones
+# Plan de sesiones
 
 ---
 
-## ✅ Sesión 1 — Preparación del entorno
+## Sesión 1 — Preparación del entorno
 
 **Objetivo:** que todas las computadoras queden listas y funcionando igual.
 
@@ -88,7 +88,7 @@ https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
 
 ---
 
-## 🧱 Sesión 2 — Instalar WordPress y configuración base
+## Sesión 2 — Instalar WordPress y configuración base
 
 **Objetivo:** tener `recal.test` corriendo con WordPress limpio.
 
@@ -98,7 +98,7 @@ https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
 
 ---
 
-## 🎨 Sesión 3 — Del diseño al plan: Figma y Dev Mode
+## Sesión 3 — Del diseño al plan: Figma y Dev Mode
 
 **Objetivo:** leer el diseño como lo haría una persona desarrolladora, no como espectadora.
 
@@ -107,25 +107,26 @@ https://github.com/user-attachments/assets/da46d612-0c01-478f-aef2-57d1e7224c79
 
 ---
 
-## 🚢 Sesión 4 — Entrega y cierre
+## Sesión 4 — Entrega y cierre
 
 **Objetivo:** **subir tu evidencia a este repositorio** en tu propia rama.
 
-- [ ] **Paso 1:** Tomar las **2 capturas de evidencia** (ver tabla abajo).
+- [ ] **Paso 1:** Tomar **3 capturas** de tu página de inicio con el modo responsive de Elementor: escritorio, tablet y móvil.
 - [ ] **Paso 2:** **Subir tu evidencia a GitHub** en tu rama `nombre-carrera-año` (instrucciones para copiar y pegar abajo).
 
-### 📸 Paso 1 — Capturas de evidencia
+### Paso 1 — Capturas de evidencia
 
-Guárdalas en formato **PNG** con estos nombres **exactos**:
+Abre tu página de inicio en el editor de Elementor y usa el **modo responsive** (selector de dispositivo en la barra superior del editor) para cambiar entre las 3 vistas. Toma una captura en cada una y guárdala en formato **PNG** con estos nombres **exactos**:
 
-| Archivo | Qué debe mostrar |
+| Archivo | Vista de Elementor |
 |---|---|
-| `01-inicio-escritorio.png` | Página de inicio a 1440 px de ancho |
-| `02-inicio-movil.png` | Página de inicio a 375 px (DevTools → `Ctrl + Shift + M`) |
+| `01-escritorio.png` | Escritorio |
+| `02-tablet.png` | Tablet |
+| `03-movil.png` | Móvil |
 
-> Tip: en DevTools, `Ctrl + Shift + P` → escribe **screenshot** → *Capture full size screenshot* toma la página completa.
+> Para tomar la captura en Windows: `Win + Shift + S` → selecciona el área → clic en la notificación para guardarla.
 
-### 🌿 Paso 2 — Subir tu evidencia a GitHub (copiar y pegar)
+### Paso 2 — Subir tu evidencia a GitHub (copiar y pegar)
 
 > **Antes de empezar**
 > - Usa **Git Bash** (menú Inicio → escribe *Git Bash*). En Mac usa la app **Terminal**.
@@ -137,7 +138,7 @@ Guárdalas en formato **PNG** con estos nombres **exactos**:
 
 Formato: **primer nombre - carrera - año**, todo en **minúsculas**, **sin acentos**, **sin ñ** (usa `n`) y **sin espacios** (usa `-`).
 
-| ✅ Correcto | ❌ Incorrecto |
+| Correcto | Incorrecto |
 |---|---|
 | `paola-computacion-2026` | `Paola-Computación-2026` |
 | `jose-informatica-2026` | `josé informática 2026` |
@@ -150,7 +151,7 @@ RAMA="paola-computacion-2026"
 echo "Tu rama será: $RAMA"
 ```
 
-> ⚠️ Si cierras Git Bash, **vuelve a pegar este bloque** antes de continuar; si no, los siguientes comandos fallan.
+> Si cierras Git Bash, **vuelve a pegar este bloque** antes de continuar; si no, los siguientes comandos fallan.
 
 #### 2.2 Dile a Git quién eres (solo la primera vez en esta computadora)
 
@@ -182,7 +183,7 @@ cp entregas/_plantilla/README.md "entregas/$RAMA/README.md"
 explorer.exe "$(cygpath -w "$PWD/entregas/$RAMA/capturas")"
 ```
 
-Se abrirá la carpeta `capturas`. **Copia ahí tus 2 imágenes** del Paso 1.
+Se abrirá la carpeta `capturas`. **Copia ahí tus 3 imágenes** del Paso 1.
 
 > En Mac, cambia la última línea por: `open "entregas/$RAMA/capturas"`
 
@@ -206,7 +207,7 @@ git push -u origin "$RAMA"
 
 #### 2.7 Comprueba que sí se subió
 
-Abre <https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/branches> y busca tu rama. Entra a `entregas/tu-rama/` y verifica que se vean tus 2 capturas.
+Abre <https://github.com/paoGonzalezUDG/proyecto-taller-wordpress/branches> y busca tu rama. Entra a `entregas/tu-rama/` y verifica que se vean tus 3 capturas.
 
 Después, abre tu **Pull Request** (no hagas *merge*):
 
@@ -214,7 +215,7 @@ Después, abre tu **Pull Request** (no hagas *merge*):
 2. Título: `Entrega final — tu-rama`
 3. Clic en **Create pull request**.
 
-#### 🧯 Errores comunes
+#### Errores comunes
 
 | Mensaje que ves | Qué significa | Solución |
 |---|---|---|
@@ -237,7 +238,7 @@ Después, en tu fork, clic en **Compare & pull request** para enviarlo hacia `pa
 
 ---
 
-## 🔁 Flujo de trabajo con Git (cada sesión)
+## Flujo de trabajo con Git (cada sesión)
 
 ```bash
 # Antes de empezar: traer los cambios nuevos
@@ -256,7 +257,7 @@ git push -u origin TU_RAMA
 
 ---
 
-## 📚 Documentación oficial
+## Documentación oficial
 
 - [WordPress — Documentación](https://wordpress.org/documentation/)
 - [Elementor — Centro de ayuda](https://elementor.com/help/)
