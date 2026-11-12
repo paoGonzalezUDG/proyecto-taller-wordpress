@@ -170,7 +170,7 @@ git config --global user.email "TU_CORREO_DE_GITHUB"
 
 #### 5. Crear tu rama y cambiarte a ella
 
-`TU_RAMA` = **primernombre-carrera-año**, en minúsculas, sin acentos, sin ñ y sin espacios.
+Cambia `NOMBRE_CARRERA_AÑO` por tu primer nombre, carrera y año, **en minúsculas, separados con guiones (-)**, sin acentos, sin ñ y sin espacios. En los siguientes pasos, esto es tu `TU_RAMA`.
 
 | Correcto | Incorrecto |
 |---|---|
@@ -180,7 +180,7 @@ git config --global user.email "TU_CORREO_DE_GITHUB"
 Crear tu rama y cambiarte a ella:
 
 ```bash
-git checkout -b TU_RAMA
+git checkout -b NOMBRE_CARRERA_AÑO
 ```
 
 Comprobar en qué rama estás:
