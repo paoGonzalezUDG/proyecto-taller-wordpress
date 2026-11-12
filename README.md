@@ -142,8 +142,15 @@ Clic derecho en el Escritorio > **Mostrar más opciones** > **Open Git Bash here
 
 #### 3. Clonar el repositorio y entrar a la carpeta
 
+Clonar el repositorio:
+
 ```bash
 git clone https://github.com/paoGonzalezUDG/proyecto-taller-wordpress.git
+```
+
+Entrar a la carpeta:
+
+```bash
 cd proyecto-taller-wordpress
 ```
 
