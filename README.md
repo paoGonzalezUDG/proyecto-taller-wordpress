@@ -156,8 +156,15 @@ cd proyecto-taller-wordpress
 
 #### 4. Configurar tu nombre y correo (solo la primera vez)
 
+Tu nombre:
+
 ```bash
 git config --global user.name "TU_NOMBRE"
+```
+
+Tu correo de GitHub:
+
+```bash
 git config --global user.email "TU_CORREO_DE_GITHUB"
 ```
 
@@ -170,8 +177,15 @@ git config --global user.email "TU_CORREO_DE_GITHUB"
 | `paola-computacion-2026` | `Paola-Computación-2026` |
 | `jose-informatica-2026` | `josé informática 2026` |
 
+Crear tu rama y cambiarte a ella:
+
 ```bash
 git checkout -b TU_RAMA
+```
+
+Comprobar en qué rama estás:
+
+```bash
 git branch
 ```
 
@@ -179,8 +193,15 @@ git branch
 
 #### 6. Crear tu carpeta de entrega
 
+Crear tu carpeta y la carpeta de capturas:
+
 ```bash
 mkdir -p entregas/TU_RAMA/capturas
+```
+
+Copiar la ficha de entrega a tu carpeta:
+
+```bash
 cp entregas/_plantilla/README.md entregas/TU_RAMA/README.md
 ```
 
@@ -188,10 +209,27 @@ Copia tus 3 capturas en `entregas/TU_RAMA/capturas` y llena `entregas/TU_RAMA/RE
 
 #### 7. Subir tus cambios
 
+Ver los archivos nuevos:
+
 ```bash
 git status
+```
+
+Agregar los archivos:
+
+```bash
 git add .
+```
+
+Guardar los cambios con un mensaje:
+
+```bash
 git commit -m "Entrega final TU_RAMA"
+```
+
+Subir tu rama a GitHub:
+
+```bash
 git push -u origin TU_RAMA
 ```
 
